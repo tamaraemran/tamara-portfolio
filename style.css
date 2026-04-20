@@ -4,12 +4,14 @@ font-family:Arial , sans-serif;
 padding: 20px;
 color: #4A2C14;
 margin: 0;
+line-height: 1.6;
 }
 .container{
     display: grid;
     grid-template-columns: 350px 1fr;
     gap: 30px;
     max-width: 1200px;
+    margin: 0 auto;
 }
 .left-column{
     display: flex;
@@ -26,6 +28,7 @@ text-align: center;
 color:#4A2C14;
 font-size: 40px;
 margin-top: 15px;
+font-weight: 600;
 }   
 
 .profile img{
@@ -36,37 +39,61 @@ object-fit:cover;
 }
 .right-column{
     background-color: #d7c9b8;
-    border:2px solid #82614A;
-    border-radius:10px;
-    padding: 20px;
-    padding-bottom: 25px;
+    border:1px solid #82614A;
+    border-radius:15px;
+    padding: 20px;  
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 .right-column section{
-    border-bottom: 2px solid #82614A;
+    border-bottom: 1px solid #9f825b;
     padding-bottom: 25px;
     margin-bottom: 30px;
+}
+.right-column section:last-child {
+    border-bottom: none; 
+    margin-bottom: 0;
 }
 .education p, .projects p, .Certificates p, .objective p{
     font-size: 18px;
     padding-left: 10px;
 }
-
-
 .Contact{
   background-color: #d7c9b8;
   border: 2px solid #82614A;
   border-radius: 10px;
   padding: 15px;
 }
-.Contact p{
+h2 {
+    font-size: 22px;
+    border-left: 5px solid #82614A; 
+    padding-left: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.Contact div{
     display: flex;
     align-items: center; 
     gap: 10px;
     font-size: 16px;  
 }
-.Contact p img{
+.Contact div:hover {
+    transform: translateX(5px); 
+}
+.Contact div img{
 width: 50px;
 height: 50px;
+}
+.Contact a {
+    text-decoration: none;
+    color: #4A2C14;
+}
+.project-item {
+    background: #e1d9ce;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 3px solid #82614A;
 }
 @media screen and (max-width: 992px) {
     .container {
